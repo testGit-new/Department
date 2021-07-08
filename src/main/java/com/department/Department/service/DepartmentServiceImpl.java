@@ -74,10 +74,10 @@ public class DepartmentServiceImpl implements DepartmentServiceI{
 		return repo.findByDepartmentName(departmentName);
 	}
 
-	@Override
-	public List<Department> findByDepartmentSort(String title, Sort sort) {
-		return repo.findByDepartmentSort(title, sort);
-	}
+	/*
+	 * @Override public List<Department> findByDepartmentSort(String title, Sort
+	 * sort) { return repo.findByDepartmentSort(title, sort); }
+	 */
 	
 	
 	

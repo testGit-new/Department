@@ -13,7 +13,7 @@ public interface DepartmentRepository  extends JpaRepository<Department, Long>{
 	
 	public Department findByDepartmentName(String departmentName);
 	
-	  List<Department> findByDepartmentSort(String title, Sort sort);
+	/* List<Department> findByDepartmentSort(String title, Sort sort); */
 
 
 }

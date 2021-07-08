@@ -20,6 +20,6 @@ public interface DepartmentServiceI {
 
 	public Department findByDepartmentName(String departmentName);
 	
-	List<Department> findByDepartmentSort(String title, Sort sort);
+	/* List<Department> findByDepartmentSort(String title, Sort sort); */
 
 }
