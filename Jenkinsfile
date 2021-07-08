@@ -1,7 +1,7 @@
 pipeline{
   environment{
     registry ="anumishra/department"
-    registryCredential = "anumishra"
+    registryCredential = "https://hub.docker.com/repository/docker/anumishra/department"
     dockerImage =''
   }
   agent any{
