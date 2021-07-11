@@ -4,7 +4,7 @@ pipeline {
    registryCredential = 'docker_id'
     dockerImage =''
   }
-    agent any
+    agent any{
 
     stages {
         stage('Hello Hi') {
@@ -34,8 +34,7 @@ pipeline {
             }
         }
       
-      }
-    
+      }    
             stage('Cleaning up') { 
 31
             steps { 
