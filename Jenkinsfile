@@ -6,11 +6,10 @@ pipeline{
   }*/
   agent any{
     statges{
-      stage('Pull the code from Git'){
-        steps{
-       git 'https://github.com/testGit-new/Department.git'
-        }
+    steps {
+                checkout([$class:'GitSCM' , branches:[name:'*/master']],)
       }
+    }
      stage('My Message'){
       {
             steps {
