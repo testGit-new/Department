@@ -11,11 +11,13 @@ pipeline{
       }
     }
      stage('My Message'){
-      {
+      
             steps {
                 echo 'Hello World'
             }
         }
+     }
+}
       
      /* stage('Building our Image'){
         steps{
@@ -45,5 +47,5 @@ pipeline{
             }*/
 
      
-  }
-}
+  
+
