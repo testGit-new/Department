@@ -7,7 +7,7 @@ pipeline{
   agent any{
     statges{
     steps {
-                checkout([$class:'GitSCM' , branches:[name:'*/master']],)
+         git  checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], gitTool: '', userRemoteConfigs: [[url: 'https://github.com/testGit-new/Department.git']]])
       }
     }
      stage('My Message'){
