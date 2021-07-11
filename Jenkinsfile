@@ -1,9 +1,9 @@
 pipeline{
-  environment{
+ /* environment{
     registry ="anumishra/department"
    registryCredential = 'docker_id'
     dockerImage =''
-  }
+  }*/
   agent any{
     statges{
       stage('Pull the code from Git'){
@@ -12,7 +12,7 @@ pipeline{
         }
       }
       
-      stage('Building our Image'){
+     /* stage('Building our Image'){
         steps{
           script{
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
@@ -37,7 +37,7 @@ pipeline{
 33
             }
 34
-            }
+            }*/
 
   }
 }
