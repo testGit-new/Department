@@ -5,7 +5,8 @@ pipeline{
     dockerImage =''
   }*/
  agent any
-    stages ('Git Clone'){
+ stages {
+   stage('Git Clone'){
     steps {
          git  checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], gitTool: '', userRemoteConfigs: [[url: 'https://github.com/testGit-new/Department.git']]])
       }
