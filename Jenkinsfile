@@ -11,6 +11,12 @@ pipeline{
        git 'https://github.com/testGit-new/Department.git'
         }
       }
+     stage('My Message'){
+      {
+            steps {
+                echo 'Hello World'
+            }
+        }
       
      /* stage('Building our Image'){
         steps{
